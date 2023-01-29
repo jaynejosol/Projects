@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Restaurant</title> 
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+        <style>
+            .top{
+                position: fixed;
+                width: 1515px;
+                height: 130px;
+                left: 0px;
+                top: 0px;
+                z-index: 9;
+                opacity: 0.8;
+                background-color: black;
+            }
+            #ab{
+                font-size: 30px;
+                left: 100px;
+                top: 20px;
+                position: absolute;
+                color: white;
+                cursor: pointer;
+            }
+            #me{
+                font-size: 30px;
+                left: 230px;
+                top: 20px;
+                position: absolute;
+                color: white;
+                cursor: pointer;
+            }
+            #bp{
+                font-size: 40px;
+                left: 650px;
+                top: 8px;
+                position: absolute;
+                color: white;
+                font-weight: 100;
+                cursor: pointer;
+            }
+            #cu{
+                font-size: 30px;
+                left: 1270px;
+                top: 20px;
+                position: absolute;
+                color: white;
+                cursor: pointer;
+            }
+            #in{
+                font-size: 35px;
+                line-height: 70px;
+                color: white;
+                font-weight: 400;
+                font-family: serif;
+            }
+            .intro{
+                width: 220px;
+                height: auto;
+                z-index: 10;
+                left: 1260px;
+                top: 180px;
+                position: absolute;
+            }
+            .home{
+                background-image: url("https://i.pinimg.com/564x/bb/fb/31/bbfb3195c12155fa3d3914fc06bb1fd6.jpg");
+                background-size: cover;
+                width: 1515px;
+                height: 2400px;
+                position: absolute;
+                top: -1630px;
+                left: 0px;
+                right: 0px;
+            }
+            .aboutus{
+                width: 1500px;
+                height: 650px;
+                position: relative;
+                top: 900px;
+            }
+            #title1{
+                font-size: 90px;
+                top: 20px;
+                color: black;
+                left: 300px;
+                position: absolute;
+            }
+            .bg{
+                background-image: url(https://i.pinimg.com/564x/b0/1f/c0/b01fc0f9f4060e79bb7fc0c63f3877e8.jpg);
+                position: absolute;
+                width: 500px;
+                height: 500px;
+                background-size: cover;
+                border-radius: 300px;
+                left: 900px;
+                top: 80px;
+            }
+            #description1{
+                width: 600px;
+                height: auto;
+                top: 300px;
+                font-size: 25px;
+                position: relative;
+                left: 160px;
+                text-align: center;
+            }
+            .ourmenu{
+                width: 1500px;
+                height: 1300px;
+                position: relative;
+                top: 1000px;
+            }
+            #title2{
+                width: 350px;
+                font-size: 90px;
+                top: 10px;
+                color: black;
+                left: 150px;
+                position: relative;
+            }
+            .line{
+                display: inline-block;
+                width: 280px;
+                position: absolute;
+                border-top: 5px solid black;
+                top: -80px;
+                left: 120px;
+                position: relative;
+            }
+            #description2{
+                width: 800px;
+                position: absolute;
+                left: 570px;
+                font-size: 30px;
+                top: 260px;
+                font-style: italic;
+                text-align: center;
+            }
+            #img1{
+                background-image: url("https://i.pinimg.com/564x/7c/6b/14/7c6b14c3180cbfa430110ffa03fca610.jpg");
+                width: 400px;
+                height: 400px;
+                background-size: cover;
+                top: 300px;
+                left: 300px;
+                position: relative;
+                border-radius: 30px;
+            }
+            .container{
+                width: 90%;
+                padding: 20px;
+                margin: 100px auto;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+            }
+            .box{
+                width: 564px;
+                margin: 0 10px;
+                top: 200px;
+                position: relative;
+                transition: 1s;
+            }
+            .box img{
+                display: block;
+                width: 100%;
+                border-radius: 5px;
+            }
+            .box:hover{
+                transform: scale(1.1);
+                z-index: 2;
+
+            }
+            .contact{
+                width: 1520px;
+                height: 330px;
+                position: relative;
+                top: 1000px;
+                background-color: #EBEBEB;
+                left: -10px;
+            }
+            .connect{
+                width: 407;
+                height: 401;
+                position: absolute;
+                left: 150px;
+                top: -20px;
+            }
+            #title3{
+                font-size: 50px;
+            }
+            .fa {
+                padding: 10px;
+                font-size: 20px;
+                width: 20px;
+                text-align: center;
+                text-decoration: none;
+                position: relative;
+                margin-top: -100px;
+            }
+            .fa:hover {
+                opacity: 0.8;
+            }
+            .fa-facebook {
+                background: white;
+                color: black;
+                border-radius: 20px;
+            }
+            .fa-twitter {
+                background: white;
+                color: black;
+                border-radius: 20px;
+            }
+            #number{
+                font-size: 20px;
+            }
+            #email{
+                font-size: 20px;
+            }
+            .visit{
+                width: 423px;
+                height: 100px;
+                left: 600px;
+                position: absolute;
+                top: -20px;
+            }
+            #title3_1{
+                font-size: 50px;
+            }
+            #date{
+                width: 200px;
+                font-size: 20px;
+                top: 30px;
+            }
+            #adress{
+                width: 200px;
+                font-size: 20px;
+            }
+            .joinUs{
+                width: 400px;
+                left: 1000px;
+                position: absolute;
+                top: -20px;
+            }
+            #title3_2{
+                font-size: 50px;
+            }
+            #info1{
+                font-size: 20px;
+            }
+            #info2{
+                font-size: 20px;
+            }
+            #em{
+                background: transparent;
+                border: none;
+                border-bottom: 2px solid #000000;
+                padding: 2px 5px;
+            }
+            #join{
+                position: absolute;
+                width: 60px;
+                font-size: 20px;
+                top: 280px;
+                border-radius: 10px;
+            }
+            #join:hover{
+                opacity: 0.8;
+                cursor: pointer;
+            }
+        </style>
+    <body>
+        <div class="top">
+        <p id="ab">About</p>
+        <p id="me">Menu</p>
+        <p id="bp">The Black Pearl</p>
+        <p id="cu">Contact Us</p>
+        </div>
+
+        <div class="intro">
+            <p id="in">It’s time to enjoy the finer things in life.</p>
+        </div>
+
+        <div class="home"></div>
+
+        <div class="aboutus">
+            <p id="title1">About Us</p>
+            <p id="description1">Our food is like a love letter to Italy. Where every ingredient tells a story. 
+                A dining experience where every bite is a work of art. Modern. Sustainable. Delicious</p>
+            <div class="bg"></div>
+        </div>
+
+        <div class="ourmenu">
+            <p id="title2">Our Menu</p>
+            <span class='line'></span>
+            <p id="description2">We enjoy eating slowly and enjoying the flavors in a variety of small dishes. 
+                Our degustation allows you to do exactly that. More than a series of plates, 
+                we offer you an experience, a link between each dish that draws on our farm 
+                location in Bronte. Our optional matching wines round out the journey.</p>
+            <div class="container">
+                <div class="box">
+                    <img src="https://i.pinimg.com/564x/7c/6b/14/7c6b14c3180cbfa430110ffa03fca610.jpg">
+                </div>
+                <div class="box">
+                    <img src="https://i.pinimg.com/564x/d0/5f/c5/d05fc50f5dbce3283bb57011ec87aa23.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="contact">
+            <div class="connect">
+                <p id="title3">Connect</p>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <p id="number">989-258-6261</p>
+                <p id="email">black.pearl@gmail.com</p>
+            </div>
+            <div class="visit">
+                <p id="title3_1">Visit</p>
+                <p id="date">Mon - Fri: 11am - 10pm
+                    ​​Sat - Sun: 11am - 12pm</p>
+                <p id="adress">2348 Dancing Dove Lane
+                    Hicksville
+                    New York 11612</p>
+            </div>
+            <div class="joinUs">
+                <p id="title3_2">Join Us</p>
+                <p id="info1">Subscribe to our newsletter for updates and deals</p>
+                <p id="info2">Email*</p>
+                <input type="email" id="em"><br>
+                <button type="submit" id="join">Join</button>
+            </div>
+        </div>    
+    <script>
+
+    </script>
+
+    </body>
+
+</html>
